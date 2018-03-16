@@ -1,0 +1,48 @@
+﻿#include <iostream>
+using namespace std;
+
+void main()
+{
+	/*3. Известно, что 1 дюйм равен 2.54 см. Разработать приложение, переводящие дюймы в сантиметры и наоборот.
+	Диалог с пользователем реализовать через систему меню. */
+
+	int a;
+	float duim;
+	float cm;
+	cout << ("For conversion Centimeter in inch enter number: 1\n");
+	cout << ("For conversion Inch in Centimeter enter number: 2\n");
+
+	cin >> a;
+
+
+	if
+		(a > 0 && a < 3)
+	{
+
+		if
+			(a == 1)
+
+		{
+			cout << ("Enter number in centimeter: ");
+			cin >> cm;
+			duim = cm/2.54;
+			cout << cm << ("cm=") << duim << ("inch\n");
+		}
+		else
+
+		{
+			cout << ("Enter number in inch: ");
+			cin >> duim;
+			cm = duim * 2.54;
+			cout << duim << ("inch=") << cm << ("cm\n");
+		}
+
+	}
+
+	else
+	{
+		cout << ("Error Need Enter just number 1 or 2\n");
+
+	}
+
+}

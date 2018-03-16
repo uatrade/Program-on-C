@@ -1,0 +1,42 @@
+﻿#include <iostream>
+using namespace std;
+
+void main()
+{
+	/*2. Дано натуральное число а (a<100). 
+	Напишите программу, выводящую на экран количество цифр в этом числе и сумму этих цифр */
+
+	int a;
+	int b;
+	int c;
+	cout<<("Enter number less tnan 100")
+	cin >> a;
+
+	if 
+	 (a < 10)
+	{
+		cout << "Kolich cifr=1\n";
+		cout << "Sum cifr=" << a <<"\n";
+	}
+	else
+	{
+		if
+			(a >= 100)
+		{
+			cout << ("Error, Please Enter number less than 100\n");
+		}
+
+		else
+		{
+			b = a % 10; /* узнаем вторую цифру*/
+			c = (a - b) / 10; /*узнаем первую цифру*/
+
+			cout << "Sum cifr=" << b + c << "\n";
+
+			cout << "Kolich cifr=2\n";
+		}
+
+
+	}
+
+}
